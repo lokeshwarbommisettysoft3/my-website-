@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collection Request - MedSetu AI</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7f6;
+            min-height: 100vh;
+        }
+
+
+        /* NAVIGATION BAR */
+
+        .navbar {
+            background: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #147a67;
+        }
+
+        .logo span {
+            color: #333;
+        }
+
+        .back {
+            text-decoration: none;
+            color: #147a67;
+            font-weight: bold;
+        }
+
+
+        /* MAIN CONTAINER */
+
+        .container {
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+
+        .collection-box {
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+
+        h1 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #777;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+
+        /* REQUEST STATUS */
+
+        .success-box {
+            background: #e8f5f2;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .success-icon {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        .success-box h2 {
+            color: #147a67;
+            font-size: 22px;
+        }
+
+
+        /* INFORMATION CARDS */
+
+        .info-card {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 18px;
+        }
+
+        .info-card h3 {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .info-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+        }
+
+
+        /* PRIORITY */
+
+        .priority-box {
+            padding: 22px;
+            background: #fff8e8;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .priority-box h3 {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .priority {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            background: #ffe0a3;
+            color: #8a5a00;
+            margin-bottom: 10px;
+        }
+
+        .priority-box p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+
+        /* TEAM ASSIGNMENT */
+
+        .team-box {
+            background: #f8fbfa;
+            border-left: 5px solid #147a67;
+            padding: 22px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .team-box h3 {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .team-box p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+
+        /* BUTTON */
+
+        .track-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #147a67;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .track-btn:hover {
+            background: #0d5c4e;
+        }
+
+
+        /* MOBILE RESPONSIVE */
+
+        @media(max-width: 600px) {
+
+            .collection-box {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <div class="navbar">
+
+        <div class="logo">
+            Med<span>Setu AI</span>
+        </div>
+
+        <a href="dashboard.html" class="back">
+            ← Dashboard
+        </a>
+
+    </div>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="container">
+
+        <div class="collection-box">
+
+
+            <h1>Collection Request 🚛</h1>
+
+            <p class="subtitle">
+                Your medical waste collection request has been
+                generated and is being processed by our smart
+                priority system.
+            </p>
+
+
+
+            <!-- REQUEST SUCCESS -->
+
+            <div class="success-box">
+
+                <div class="success-icon">✓</div>
+
+                <h2>Collection Request Created</h2>
+
+                <p>Request ID: MC-2026-001</p>
+
+            </div>
+
+
+
+            <!-- REQUEST DETAILS -->
+
+            <div class="info-card">
+
+                <h3>📍 Collection Location</h3>
+
+                <div class="info-value">
+                    General Ward
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>🗑 Waste Status</h3>
+
+                <div class="info-value">
+                    Ready for Collection
+                </div>
+
+            </div>
+
+
+            <!-- SMART PRIORITY -->
+
+            <div class="priority-box">
+
+                <h3>🧠 Smart Priority Analysis</h3>
+
+                <div class="priority">
+                    MEDIUM PRIORITY
+                </div>
+
+                <p>
+                    Priority is determined based on factors such as
+                    waste quantity, category, urgency and waiting time.
+                </p>
+
+            </div>
+
+
+
+            <!-- TEAM ASSIGNMENT -->
+
+            <div class="team-box">
+
+                <h3>👥 Collection Team Assignment</h3>
+
+                <p>
+                    The system is checking available collection teams
+                    and will assign the most suitable team for this request.
+                </p>
+
+            </div>
+
+
+
+            <!-- TRACK BUTTON -->
+
+            <button class="track-btn"
+                onclick="window.location.href='tracking.html'">
+
+                📍 Track Collection Status →
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
