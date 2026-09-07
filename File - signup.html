@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account - MedSetu AI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e8f5f2, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .back {
+            text-decoration: none;
+            color: #147a67;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .logo h1 {
+            color: #147a67;
+            font-size: 30px;
+        }
+
+        .logo p {
+            color: #777;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #147a67;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #147a67;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0d5c4e;
+        }
+
+        .login {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .login a {
+            color: #147a67;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="index.html" class="back">← Back to Home</a>
+
+        <div class="logo">
+            <h1>MediCycle AI</h1>
+            <p>Smart Medical Waste Management</p>
+        </div>
+
+        <h2>Create Your Account</h2>
+
+        <form onsubmit="createAccount(event)">
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Hospital / Organization</label>
+                <input type="text" placeholder="Enter organization name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Select Role</label>
+
+                <select required>
+                    <option value="">Choose your role</option>
+                    <option>Healthcare Staff</option>
+                    <option>Collection Team</option>
+                    <option>Administrator</option>
+                </select>
+
+            </div>
+
+            <button type="submit">
+                Create Account →
+            </button>
+
+        </form>
+
+        <div class="login">
+            Already have an account?
+            <a href="#">Login</a>
+        </div>
+
+    </div>
+
+
+    <script>
+        function createAccount(event) {
+
+            event.preventDefault();
+
+            window.location.href = "dashboard.html";
+        }
+    </script>
+
+</body>
+</html>
