@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MedSetu AI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e8f5f2, #ffffff);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #147a67;
+        }
+
+        .logo span {
+            color: #333;
+        }
+
+        /* Main Section */
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            background: #147a67;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 52px;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            color: #147a67;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            color: #555;
+            max-width: 650px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .feature {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            font-size: 15px;
+        }
+
+        .get-started {
+            padding: 15px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            background: #147a67;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .get-started:hover {
+            background: #0d5c4e;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #777;
+        }
+
+        /* Mobile Responsive */
+        @media(max-width: 600px) {
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Med<span>Setu AI</span></div>
+        <div>Smart Medical Waste Management</div>
+    </nav>
+
+
+    <!-- Main Section -->
+    <section class="hero">
+
+        <div class="icon">🏥</div>
+
+        <h1>Med<span>Setu AI</span></h1>
+
+        <p class="subtitle">
+            An intelligent platform for smart medical waste classification,
+            segregation guidance, collection management and digital tracking.
+        </p>
+
+
+        <div class="features">
+
+            <div class="feature">🤖 AI Classification</div>
+
+            <div class="feature">♻️ Smart Segregation</div>
+
+            <div class="feature">🚛 Collection Tracking</div>
+
+            <div class="feature">📊 Digital Monitoring</div>
+
+        </div>
+
+
+        <button class="get-started"
+            onclick="window.location.href='signup.html'">
+
+            Get Started →
+
+        </button>
+
+    </section>
+
+
+    <footer>
+        © 2026 MediCycle AI | Smarter Waste. Safer Care.
+    </footer>
+
+</body>
+</html>
